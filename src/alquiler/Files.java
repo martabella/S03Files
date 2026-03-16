@@ -2,6 +2,7 @@ package alquiler;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Files {
 
@@ -22,9 +23,9 @@ public class Files {
 
     public static ArrayList<Car> readTextFile() {
         ArrayList<Car> cars = new ArrayList<>();
-        try (BufferedReader reader = new BufferedReader(new FileReader(TEXT_FILE))) {
+        try (Scanner reader = new Scanner(new FileReader(TEXT_FILE))) {
             String line;
-            while ((line = reader.readLine()) != null) {
+            while ((line = reader.nextLine()) != null) {
                 String[] data = line.split(";");
                 cars.add(new Car(data[0], data[1], data[2], Integer.parseInt(data[3])));
             }
