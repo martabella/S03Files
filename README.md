@@ -19,8 +19,8 @@ Se han implementado dos estrategias para el almacenamiento y recuperación de da
 * **Bloques `try-catch`**: Manejo controlado de errores de entrada/salida (`IOException`) y errores de formato de datos.
 * **Try-with-resources (AutoCloseable)**: Uso de esta estructura para asegurar el cierre automático de los flujos de datos (*streams*), garantizando la integridad de los archivos y evitando fugas de memoria.
 
-### 4. Programación Modular (Clase Utils)
-* Se ha seguido un diseño modular delegando la lógica de lectura y escritura en la clase **`Files`** mediante métodos **static**. Esto permite una separación clara entre la interfaz de usuario y la lógica de acceso a datos.
+### 4. Programación Modular (Clases Utils, Files)
+* Se ha seguido un diseño modular delegando la lógica de lectura y escritura en ficheros en la clase **`Files`** y la entrada info por consola en la clase **`Utils`** mediante métodos **static**. Esto permite una separación clara entre la interfaz de usuario y la lógica de acceso a datos.
 
 ---
 
